@@ -99,6 +99,7 @@ class GlCanvas : public GlPanel {
   void RenderSamplingUI();
 
   ImGuiContext* GetImGuiContext() { return m_ImGuiContext; }
+  Batcher* GetBatcher() { return &batcher_; }
 
   PickingManager& GetPickingManager() { return m_PickingManager; }
 
